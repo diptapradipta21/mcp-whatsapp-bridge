@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-whatsapp-bridge"
+version = "0.1.0"
+description = "Model Context Protocol (MCP 2.0) server for direct WhatsApp messaging and alerts with Claude"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Fajar Indra Pradipta Gajah", email = "diptapradipta21@gmail.com" }
+]
+keywords = ["mcp", "claude", "whatsapp", "anthropic", "model-context-protocol", "notifications"]
+dependencies = [
+    "mcp>=2.0.0",
+]
+
+[project.scripts]
+mcp-whatsapp-bridge = "server:app.run"
