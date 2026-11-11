@@ -66,6 +66,7 @@ Test connection to your gateway without launching the full MCP loop:
 
 ```bash
 python3 server.py --test
+python3 server.py --test --json
 ```
 
 ---
